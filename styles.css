@@ -118,10 +118,24 @@ select{
     margin: 1rem 0rem;
     width: 100%;
     position: relative;
-    background:rgb(88, 88, 88)
+    background:rgb(88, 88, 88);
+    cursor: pointer;
+    border-radius: 1rem;
 }
-.tempo p{
 
+.tempo-slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: white;
+}
+
+.tempo p{
+    font-size: 1.5rem;
+    margin: 2rem;
+    text-align: center;
 }
 .tempo-nr{}
 
