@@ -57,22 +57,19 @@ svg {
 .controls button{
     padding: 1rem;
     border: none;
-    background: rgb(93, 91, 91);
+    background: rgb(128, 126, 126);
     color: white;
     font-size: 1rem;
     cursor: pointer;
     transition: all 0.5s ease;
 }
 
-.pad {
-    transition: all 0.5s ease;
+.mute.active {
+    background: rgb(93, 91, 91);
 }
 
-.play{
-    padding: 1rem 2rem;
-    font-size: 1.5rem;
-    background: rgb(93, 91, 91);
-    
+.pad {
+    transition: all 0.5s ease;
 }
 
 
@@ -94,4 +91,47 @@ svg {
 }
 .hihat-pad.active{
     background: rgb(255, 192, 1);
+}
+
+.play{
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    background: rgb(143, 140, 140);
+    color:white;
+    cursor: pointer;
+    margin-top: 3rem; 
+}
+
+select{
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+
+.tempo{
+    margin: 3rem;
+    width: 30%;
+}
+.tempo-slider{
+    padding: 0.2rem;
+    -webkit-appearance: none;
+    margin: 1rem 0rem;
+    width: 100%;
+    position: relative;
+    background:rgb(88, 88, 88)
+}
+.tempo p{
+
+}
+.tempo-nr{}
+
+
+
+@keyframes playTrack{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.2);
+    }
 }
